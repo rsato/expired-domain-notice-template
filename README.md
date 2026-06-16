@@ -50,6 +50,8 @@ This template is designed to help notify affected parties of such risks and enco
 
 This template was originally written for websites previously operated in Japanese, but it may be adapted for other languages and jurisdictions as appropriate.
 
+If you use or adapt this template, issue reports, improvements, translations, and examples of real-world usage are welcome.
+
 ### License
 
 This work is licensed under the [Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)](https://creativecommons.org/licenses/by-sa/4.0/). You are free to share and adapt the material for any purpose, provided that you give appropriate attribution and distribute derivative works under the same license.
