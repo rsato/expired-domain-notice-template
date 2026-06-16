@@ -1,5 +1,9 @@
 # Expired Domain Notice Template
 
+![License](https://img.shields.io/badge/license-CC--BY--SA%204.0-blue)
+
+A reusable security notice template for expired domains to prevent misuse and incidents.
+
 ## 概要
 
 期限切れとなったドメインを第三者が取得した際、過去の利用者や関係者に対して情報セキュリティ上の注意喚起を行うためのHTMLテンプレートです。
