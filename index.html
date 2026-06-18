@@ -1,15 +1,20 @@
 <!--
-Template: expired-domain-notice-template
-License: CC BY-SA 4.0
-https://creativecommons.org/licenses/by-sa/4.0/
+  Template: expired-domain-notice-template
+  Version: v1.2.0
+  Repository: https://github.com/rsato/expired-domain-notice-template
+  License: CC BY-SA 4.0
+  https://creativecommons.org/licenses/by-sa/4.0/
+
+  Modified:
+  - (optional)
 -->
 <!DOCTYPE html>
 <html lang="ja">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="robots" content="noindex">
-<title>ドメインに関する重要なお知らせ</title>
+<meta name="robots" content="noindex,follow">
+<title>[ドメイン名] - ドメインに関する重要なお知らせ</title>
 <style>
 body {
   font-family: system-ui, -apple-system, "Segoe UI", "Noto Sans JP", sans-serif;
@@ -63,11 +68,23 @@ small {
 </head>
 <body>
 <header>
-<h1>[旧サイト名]に使用されていたドメインに関する重要なお知らせ</h1>
-<p>本ドメイン(<code>[ドメイン名]<code>)は、過去に[旧サイト名]の運営に使用されていたことが公開情報から確認されています。</p>
-<div>[[過去のサイトに関する情報へのリンク]]</div>
+<h1>「[旧サイト名]」に使用されていたドメインに関する重要なお知らせ</h1>
+<p>本ドメイン(<code>[ドメイン名]</code>)は、過去に「[旧サイト名]」の運営に使用されていたことが公開情報から確認されています。</p>
+<div>
+<h2>公開情報（本ドメインの過去の利用実績）</h2>
+<p>以下は、本ドメインが過去に「[旧サイト名]」として利用されていたことを示す公開情報です。</p>
+<!--
+  公開情報（ドメインごとに差し替え）
+  可能な限り一次情報を優先してください。
+  例:
+  - 当時の公式サイト・公式SNSアカウントの発表
+  - プレスリリース
+  - ニュース記事
+  - Wayback Machine
+-->
+</div>
 <p>現在、本ドメインは以前とは異なる者によって登録・管理されています。</p>
-<p>本ページは、ドメインの有効期限切れにより再登録が可能となったドメインを第三者が取得した場合に生じ得る情報セキュリティ上のリスクについて周知し、注意喚起を行うことを目的として公開しています。</p>
+<p>本ページは、ドメインの有効期限切れにより再登録が可能となったドメイン（いわゆるドロップキャッチ等により取得されたものを含みます。）を第三者が取得した場合に生じ得る情報セキュリティ上のリスクについて周知し、注意喚起を行うことを目的として公開しています。</p>
 </header>
 <main>
 <h2>本ドメインの関係者の方へ</h2>
@@ -181,6 +198,7 @@ small {
 <li>一定期間はドメインを保持し、利用終了のお知らせページを公開することを検討する。</li>
 <li>メールについては、ウェブサイトより先に利用を終了し、Null MX、SPFおよびDMARCを設定して、本ドメイン宛のメールを受信せず、本ドメインを送信元とするメールが正当なものとして扱われないよう構成する。</li>
 <li>旧メールアドレス宛の問い合わせや誤送信が収束し、古いURLへのアクセスが十分に減少したこと、外部サービスとの連携やシステム設定が残存していないことなどを確認したうえで、ドメインを廃止するか、必要に応じて継続保有することを検討する。</li>
+<li>利用を終了したドメインは、有効期限経過後に第三者によって再登録（いわゆるドロップキャッチを含む。）される可能性があることを前提として対応を行うことが望まれます。</li>
 </ul>
 <h2>実際に起きた事例</h2>
 <p>期限切れとなったドメインの第三者取得は、特定の業種や組織だけの問題ではありません。行政機関、企業、技術コミュニティなど、国内外でさまざまな事例が報告されています。</p>
@@ -206,7 +224,7 @@ small {
 <p><strong>PyPI「ctx」パッケージ開発者アカウント乗っ取り（Python Package Index、2022年）</strong><br>
 攻撃者が開発者の期限切れドメインを取得し、そのドメインのメールアドレスを利用してパスワード再設定を実施しました。その結果、PyPIの開発者アカウントが乗っ取られ、正規パッケージ「ctx」が悪意あるコードを含むものへ置き換えられました。ドメイン失効がアカウント乗っ取りやサプライチェーン攻撃につながった実例として知られています。</p>
 <ul>
-<li><a href="https://blog.pypi.org/posts/2025-08-18-preventing-domain-resurrections/.html" target="_blank" rel="noopener noreferrer">PyPI Blog「Preventing Domain Resurrection Attacks」</a></li>
+<li><a href="https://blog.pypi.org/posts/2025-08-18-preventing-domain-resurrections/" target="_blank" rel="noopener noreferrer">PyPI Blog「Preventing Domain Resurrection Attacks」</a></li>
 <li><a href="https://thehackernews.com/2022/05/pypi-package-ctx-and-php-library-phpass.html" target="_blank" rel="noopener noreferrer">Popular PyPI Package 'ctx' and PHP Library 'phpass' Hijacked to Steal AWS Keys</a></li>
 </ul>
 </main>
@@ -217,7 +235,7 @@ small {
 <p>本ドメインについては、メール受信を行わない構成（Null MX）とするとともに、SPFおよびDMARCを設定し、本ドメインを送信元とするメールが正当なものとして扱われないよう運用しています。ただし、これらの仕組みは受信側の設定や実装に依存するため、本ドメインを送信元とするメールの送信そのものを完全に防止するものではありません。また、外部サービスとの連携設定等に起因する通信について、第三者への到達可能性を完全に排除できることを保証するものではありません。</p>
 <p>本ページに掲載している情報については正確性の確保に努めていますが、その完全性、正確性および最新性を保証するものではありません。本ページの情報を利用または参照したことによって生じたいかなる損害、不利益その他の結果についても、当方は一切の責任を負いません。</p>
 <p>また、本ドメインについて、将来にわたる保持、継続的な運用または本ページの継続的な公開を保証するものではありません。</p>
-<p>本ページは、期限切れドメインに関する注意喚起を目的としたテンプレート(<a href="https://github.com/rsato/expired-domain-notice-template" target="_blank" rel="noopener noreferrer">rsato/expired-domain-notice-template</a>)を基に作成されています。テンプレートは<a href="https://creativecommons.org/licenses/by-sa/4.0/deed.ja" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a>ライセンスの下で提供されています。</p>
+<p>本ページは、期限切れドメインに関する注意喚起を目的としたテンプレートプロジェクト(<a href="https://github.com/rsato/expired-domain-notice-template" target="_blank" rel="noopener noreferrer">rsato/expired-domain-notice-template</a>)を基に作成されています。テンプレートは<a href="https://creativecommons.org/licenses/by-sa/4.0/deed.ja" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a>ライセンスの下で提供されています。</p>
 <h2>お問い合わせ</h2>
 <p>本ページの掲載内容に関するご連絡は、以下のフォームをご利用ください。</p>
 <ul>
