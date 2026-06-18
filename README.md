@@ -33,7 +33,7 @@ A reusable HTML template for publishing security notices for expired domains acq
 
 ## ライセンス
 
-本テンプレートは、同様の状況に直面した方が再利用・改変しやすいよう、[Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)](https://creativecommons.org/licenses/by-sa/4.0/)ライセンスの下で公開しています。利用、共有、改変および再配布が認められていますが、出典表示（Attribution）および改変物の同一ライセンスでの公開（ShareAlike）の条件に従ってください。
+本テンプレートは、同様の状況に直面した方が再利用・改変しやすいよう、[Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)](https://creativecommons.org/licenses/by-sa/4.0/deed.ja)ライセンスの下で公開しています。利用、共有、改変および再配布が認められていますが、出典表示（Attribution）および改変物の同一ライセンスでの公開（ShareAlike）の条件に従ってください。
 
 ----
 
